@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Costing Pricing.unity
     guid: 2c701d6c77328c64180fafa5844f0225
+  - enabled: 1
+    path: Assets/Scenes/Saved Recipes.unity
+    guid: e81ef48179ec6e0458810f90bc9b1739
+  - enabled: 1
+    path: Assets/Scenes/ConversionCalculator.unity
+    guid: 5c0f13cd1ca1c0a45bc7898ec723762d
   m_configObjects: {}
