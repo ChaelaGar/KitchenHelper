@@ -1,12 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
+using UnityEngine;
 
-public class Calculator : MonoBehaviour
+public class InputGet : MonoBehaviour
 {
+    [SerializeField]
+    TMP_InputField field;
+    [SerializeField]
+    TMP_InputField i_eggamount;
+    [SerializeField]
+    TMP_InputField i_eggcost;
     // Start is called before the first frame update
-    public TextMeshProUGUI InputText;
     void Start()
     {
         
