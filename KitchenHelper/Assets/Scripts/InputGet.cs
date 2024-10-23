@@ -20,6 +20,13 @@ public class InputGet : MonoBehaviour
     [SerializeField]
     TMP_InputField i_flourtotal;
     [SerializeField]
+    TMP_InputField i_goldenPotatoamt;
+    [SerializeField]
+    TMP_InputField i_goldenPotatocost;
+    [SerializeField]
+    TMP_InputField i_goldenPotatototal;
+    [SerializeField]
+    TMP_InputField i_FULLTOTAL;
 
     // Start is called before the first frame update
     void Start()
@@ -51,7 +58,7 @@ public class InputGet : MonoBehaviour
             Debug.Log(i_eggtotal.text);
             Debug.Log(i_eggtotal);
             float eggtotal = eggamount * eggcost;
-            i_eggtotal.text = eggtotal.ToString();
+            i_eggtotal.text = "$" + eggtotal.ToString();
         }
         if (i_flouramount && i_flourcost == null)
         {
@@ -67,7 +74,23 @@ public class InputGet : MonoBehaviour
             Debug.Log(i_flourtotal.text);
             Debug.Log(i_flourtotal);
             float flourtotal = flouramount * flourcost;
-            i_flourtotal.text = flourtotal.ToString();
+            i_flourtotal.text = "$" + flourtotal.ToString();
+        }
+        if (i_goldenPotatoamt && i_goldenPotatocost == null)
+        {
+            i_goldenPotatototal.text = string.Empty;
+        }
+        else if (i_goldenPotatoamt && i_goldenPotatocost != null)
+        {
+            float goldenPotatocost = -1;
+            Debug.Log(i_goldenPotatoamt.text);
+            Debug.Log(float.TryParse(i_goldenPotatocost.text, out goldenPotatocost));
+            float goldenPotatoamt = -1;
+            Debug.Log(float.TryParse(i_goldenPotatoamt.text, out goldenPotatoamt));
+            Debug.Log(i_goldenPotatototal.text);
+            Debug.Log(i_goldenPotatototal);
+            float goldenPotatototal = goldenPotatoamt * goldenPotatocost;
+            i_goldenPotatototal.text = "$" + goldenPotatototal.ToString();
         }
     }
 }
