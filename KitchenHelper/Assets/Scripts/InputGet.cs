@@ -14,6 +14,9 @@ public class InputGet : MonoBehaviour
     TMP_InputField i_eggamount;
     [SerializeField]
     TMP_InputField i_eggcost;
+    [SerializeField]
+    TMP_InputField i_eggtotal;
+    float eggtotal = 0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +38,8 @@ public class InputGet : MonoBehaviour
         Debug.Log(float.TryParse(i_eggcost.text, out eggcost));
         float eggamount = -1;
         Debug.Log(float.TryParse(i_eggamount.text, out eggamount));
-        Debug.Log(eggamount * eggcost);
+        Debug.Log(i_eggtotal.text);
+        Debug.Log(i_eggtotal);
+        float eggtotal = eggamount * eggcost;
     }
 }
