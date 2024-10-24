@@ -21,4 +21,9 @@ public class WinScript : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName);
     }
+    public void quit()
+    {
+    Application.Quit();
+    }
 }
+
